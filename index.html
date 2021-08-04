@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>How's my money doing?</h1>
-    <div>
-        <form>
-            <p>
-                <label for="current-price">Enter Current Stock Price: </label>
-                <input type="number" name="Current Stock Price" id="current-price">
-            </p>
-            <p>
-                <label for="purchase-price">Enter Stock Purchase Price: </label>
-                <input type="number" name="Stock Purchase Price" id="purchase-price">
-            </p>
-            <p>
-                <label for="stock-quantity">Enter Stock Quantity: </label>
-                <input type="number" name="Stock Quantity" id="stock-quantity">
-            </p>
-            <p>
-                <button id="check">Check</button>
-            </p>
-        </form>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/stock.ico" />
+  </head>
+  <body>
+    <div id="profitEmojis" style="display: none">
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+    </div>
+    <div id="lossEmojis" style="display: none">
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+    </div>
+    <div id="banner">
+      <h1 id="heading">How's my money doing?</h1>
+      <img
+        id="hero-img"
+        src="assets/hero-img.svg"
+        alt="How's my money doing?"
+      />
+      <a id="main-link" href="https://stock-profit-losss.netlify.app/#main-app"
+        >Let's Check!</a
+      >
+    </div>
+    <div id="main-app">
+      <form class="form-style">
+        <label class="label-style" for="current-price"
+          >Enter Current Stock Price:
+        </label>
+        <input
+          class="input-style"
+          type="number"
+          name="Current Stock Price"
+          id="current-price"
+        />
+        <label class="label-style" for="purchase-price"
+          >Enter Stock Purchase Price:
+        </label>
+        <input
+          class="input-style"
+          type="number"
+          name="Stock Purchase Price"
+          id="purchase-price"
+        />
+        <label class="label-style" for="stock-quantity"
+          >Enter Stock Quantity:
+        </label>
+        <input
+          class="input-style"
+          type="number"
+          name="Stock Quantity"
+          id="stock-quantity"
+        />
+        <button class="check-style" id="check">Check</button>
+      </form>
+      <div id="result">
         <p id="result-text"></p>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
