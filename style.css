@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #191919;
+    --secondary-color: #1accfa;
+    --tertiary-color: #eaeaea;
+    --quaternary-color: #007896;
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#banner {
+    margin: auto;
+    width: 60vw;
+    text-align: center;
+    height: 100vh;
+}
