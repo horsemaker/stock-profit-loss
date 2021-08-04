@@ -21,3 +21,10 @@ body {
     text-align: center;
     height: 100vh;
 }
+
+#heading {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 3rem;
+    font-weight: 700;
+}
