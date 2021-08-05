@@ -80,6 +80,7 @@ function giveResult(event) {
     resultText.textContent =
       'You lost ' + percentLoss + '%. Your total loss is ' + absoluteLoss + '.'
   } else if (currentPrice === purchasePrice) {
+    result.style.display = 'block'
     resultText.textContent = 'Perfectly balanced!'
   }
 }
