@@ -258,3 +258,28 @@ body {
   -webkit-animation-delay: 3s, 1.5s;
   animation-delay: 3s, 1.5s;
 }
+
+.footer,
+i {
+  color: var(--tertiary-color);
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 5vh;
+  margin-right: 0.6vw;
+  margin-left: 0.6vw;
+}
+
+.github-repo {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.github-repo-link {
+  color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.redirect {
+    font-size: 1rem;
+}
