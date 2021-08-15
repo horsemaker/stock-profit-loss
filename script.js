@@ -12,9 +12,19 @@ var resultText = document.querySelector('#result-text')
 function giveResult(event) {
   event.preventDefault()
 
+  if (!currentPriceInput.value || !purchasePriceInput.value || !stockQuantityInput.value) {
+    alert("Invalid Input! Please enter correct values :)")
+    return
+  }
+
   var currentPrice = parseFloat(currentPriceInput.value)
   var purchasePrice = parseFloat(purchasePriceInput.value)
   var stockQuantity = parseInt(stockQuantityInput.value)
+
+  if (currentPrice <= 0 || purchasePrice<=0 || stockQuantity<=0) {
+    alert("Values can't be less than or equal to 0! Enter valid values :)")
+    return
+  }
 
   if (currentPrice > purchasePrice) {
     var percentProfit = (
